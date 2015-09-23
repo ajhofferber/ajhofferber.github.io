@@ -2,4 +2,9 @@ html{
   background-color: hotpink;
   color: navajowhite;
   font-family: futura;
+  background: url("http://31.media.tumblr.com/tumblr_m0acrj4End1qg8j48o1_500.gif") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

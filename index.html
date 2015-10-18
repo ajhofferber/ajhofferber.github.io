@@ -4,22 +4,43 @@
   <meta charset="UTF-8">
   <title>A S H</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script type="text/javascript" src ="javascripts/javascript.js">
-
-  </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+  <script src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript"></script>
+  <script type="text/javascript" src ="javascripts/javascript.js"></script>
  </head>
  <body>
+<!-- <img src="/ash.png" alt="" /> -->
+
+
 
   <h1> Ash Hofferber </h1>
 
-  <ul>
-    <li>Web Developer</li>
-    <li>Design Enthusiast</li>
-    <li>Nacho Connoisseur</li>
-    <li>Great Attitude</li>
-    <li>MORE COMING SOON OKAY?!</li>
-  </ul>
+<ul>
+  <li>Web Developer</li>
+  <li>Design Enthusiast</li>
+  <li>Nacho Connoisseur</li>
+  <li>Great Attitude</li>
+  <li>MORE COMING SOON!</li>
+  <li>But for now, here's my <a class="fancybox" data-fancybox-type="iframe" href="images/resume.pdf">resume</a></li>
+</ul>
 
-  
+
  </body>
+
+ <script type="text/javascript">
+
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      width: 600,
+      height: 600,
+      padding: 0,
+      iframe: {
+        preload: false
+      }
+    });
+  });
+
+</script>
+
 </html>

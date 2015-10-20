@@ -1,6 +1,8 @@
 
 body{
     font-family: 'Playfair Display', serif;
+    background-color: rgb(249, 238, 231);
+    color:rgb(39, 40, 39);
 }
 
 .parallax-window {

@@ -3,6 +3,7 @@ body{
     font-family: 'Playfair Display', serif;
     background-color: rgb(249, 238, 231);
     color:rgb(39, 40, 39);
+    font-size: 16px;
 }
 
 .parallax-window {
@@ -16,8 +17,10 @@ body{
   color:rgb(246, 223, 209) ;
 }
 
-b{
-  color:rgb(10, 226, 176);
+span{
+  color:rgb(255, 203, 181);
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #first{
@@ -38,4 +41,13 @@ b{
 #worktitle{
   text-align: center;
   padding: 4%;
+}
+
+.contact{
+  text-align: center;
+  color: rgb(39, 40, 39);
+}
+
+a:hover{
+  color: hotpink;
 }

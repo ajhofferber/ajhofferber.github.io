@@ -1,0 +1,39 @@
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+.parallax-window {
+    min-height: 750px;
+    background: transparent;
+}
+
+.intro{
+  z-index: 2;
+  position: absolute;
+  color:rgb(246, 223, 209) ;
+}
+
+b{
+  color:rgb(10, 226, 176);
+}
+
+#first{
+  margin-top: 25%;
+  margin-left: 20%;
+}
+
+#middle{
+  margin-top: 30%;
+  margin-left: 20%;
+}
+
+#bottom{
+  margin-top: 35%;
+  margin-left: 20%;
+}
+
+#worktitle{
+  text-align: center;
+  padding: 4%;
+}

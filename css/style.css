@@ -1,14 +1,19 @@
 
 body{
-    font-family: 'Playfair Display', serif;
+    font-family: futura;
     background-color: rgb(249, 238, 231);
     color:rgb(39, 40, 39);
     font-size: 16px;
 }
 
 .parallax-window {
-    min-height: 750px;
+    min-height: 500px;
     background: transparent;
+}
+
+#top-window{
+  min-height: 750px;
+  background: transparent;
 }
 
 .intro{
@@ -20,22 +25,25 @@ body{
 span{
   color:rgb(255, 203, 181);
   font-size: 1.2em;
-  font-family: 'Open Sans', sans-serif;
 }
 
 #first{
-  margin-top: 25%;
-  margin-left: 20%;
+width: 60%;
+margin-right: 20%;
+margin-left: 20%;
+z-index: 2;
+position: absolute;
 }
 
-#middle{
-  margin-top: 30%;
-  margin-left: 20%;
+#content{
+  margin: 5% 10%;
+  line-height: 1.5em;
 }
 
 #bottom{
-  margin-top: 35%;
-  margin-left: 20%;
+  margin: 3% 0;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 #worktitle{

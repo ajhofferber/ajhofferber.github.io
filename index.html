@@ -1,88 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <title>A S H</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <script src="scripts.js" charset="utf-8"></script>
   </head>
   <body>
-<img id="first" src="images/logo.png"></img>
-<div id="top-window" class="parallax-window" data-parallax="scroll" data-image-src="images/beach2.jpg"></div>
 
-<h4 id="content">Hi! I'm Ashley, but some people call me Ash.<br>I am a strategist-turned-web developer living in New York.<br>I love good stories, asking questions and anything tropical.<br>Here's my <a href="images/resume.pdf">resume</a>, if you feel like taking a peek.</h4>
+    <div id="overlay">
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="images/IMG_0393.jpg"></div>
+      <span class="jittery">ASHLEY HOFFERBER</span>
 
-<div><h2 id="worktitle">Here are a few things I've been working on</h2>
-
-  <div class="row">
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/greenhaus.png">
-        </div>
-        <div class="card-content">
-          <h5>Greenhaus</h5>
-          <p>Greenhaus is an application that allows users to better understand and manage their houseplants.  Using Ruby on Rails and the Twilio API, users can not only search the database to find out more information about over 100 common houseplant types, but they can also sign up to receive text message reminders to water their plants. Each plant has it's own specific water index associated to it, and users will only receive a text when a particular plant needs some watering!</p>
-        </div>
-        <div class="card-action">
-          <a href="https://greenhaus.herokuapp.com">Check Out the Site</a>
-        </div>
-      </div>
     </div>
-
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image">
-          <img src="images/soundtrak.png">
-        </div>
-        <div class="card-content">
-          <h5>soundtrak</h5>
-          <p>soundtrak allows users to search by movie title and listen to all of the tracks that are included in the film. Using Ruby on Rails for the backend and Backbone.js & Materialize for the from end, as well as the Spotify API & OMDB API, users can enter the title of a film and, using multiple ajax calls, quickly return a brief synopsis of the film, as well as a collection of playable Spotify tracks from the film. Additionally, if the user has an account, he or she is able to "favorite" a song and have it saved to their profile. </p>
-        </div>
-        <div class="card-action">
-          <a href="https://soundtrak.herokuapp.com">Check Out the Site</a>
-        </div>
-      </div>
+    <div id="main">
+      <h2>Hi. I'm <a href="" id='back'>Ashley</a>, or Ash. I am a web developer living in Brooklyn, NY. </h2>
+      <h2>Right now, I work at <a href="http://www.generalassemb.ly">General Assembly</a> as an Instructional Associate in their Web Development Immersive program, where I spend my days helping students (and myself) learn new aspects of web development.</h2>
+      <h2>I used to work as a brand strategist at a company called <a href="http://www.stickscompany.com">Sticks</a>.</h2>
+      <h2>I am especially proud of an app I made called <a href="http://greenhaus.herokuapp.com">greenhaus</a>. You can learn more about it <a href="https://github.com/ajhofferber/greenhaus">here</a>.</h2>
+      <h2>I also made something called <a href="http://soundtrak.herokuapp.com">soundtrak</a> with some pals of mine. More about it <a href="https://github.com/nilocy/ACK_attack">here</a>.</h2>
+      <h2>Actually, you can see a lot of the stuff I've made on my <a href="http://github.com/ajhofferber">github</a> or you can just look at my <a href="./images/resume.pdf">resume</a>.</h2>
+      <h2>I like nachos and tropical things. <a href="mailto:ajhofferber@gmail.com">Get ahold of me</a>.</h2>
     </div>
-
-
-  <div class="col s4">
-    <div class="card">
-      <div class="card-image">
-        <img src="images/waiteraid.png">
-      </div>
-      <div class="card-content">
-        <h5>WaiterAid</h5>
-        <p>WaiterAid is a restaurant management application, designed to help waitstaff, kitchen staff, and restaurant managers alike. It uses Ruby with a Sinatra framework, Javascript, jQuery, HTML & CSS. It is designed to be both mobile and desktop friendly.</p>
-      </div>
-      <div class="card-action">
-        <a href="https://waiteraid.herokuapp.com">Check Out the Site</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-<div class="parallax-window" data-parallax="scroll" data-image-src="images/IMG_0393.jpg"></div>
-
-<h5 id="bottom">Thanks for stopping by! Feel free to contact me with any inquiries or questions.</h5>
-<div class="row">
-<h5 class="col s4 contact"><a href="https://github.com/ajhofferber">github</a></h5><h5 class="col s4 contact"><a href="mailto:ajhofferber@gmail.com">email</a></h5><h5 class="col s4 contact"><a href="https://www.linkedin.com/in/ashleyhofferber">linked in</a></h5>
-</div>
-
-
 
   </body>
-
-
 </html>

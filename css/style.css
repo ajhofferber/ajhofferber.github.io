@@ -1,61 +1,49 @@
-
 body{
-    font-family: futura;
-    background-color: rgb(249, 238, 231);
-    color:rgb(48, 48, 48);
-    font-size: 16px;
+  background-color: rgb(247, 247, 247);
+  font-family: futura;
+  font-size: 16px;
 }
 
-.parallax-window {
-    min-height: 500px;
-    background: transparent;
-}
-
-#top-window{
-  min-height: 750px;
-  background: transparent;
-}
-
-.intro{
-  z-index: 2;
+#overlay{
   position: absolute;
-  color:rgb(246, 223, 209) ;
-}
-
-span{
-  color:rgb(255, 203, 181);
-  font-size: 1.2em;
-}
-
-#first{
-width: 60%;
-margin-right: 20%;
-margin-left: 20%;
-z-index: 2;
-position: absolute;
-}
-
-#content{
-  margin: 5% 10%;
-  line-height: 1.5em;
-}
-
-#bottom{
-  margin: 3% 0;
-  line-height: 1.5em;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('./images/background.png');
+  cursor: pointer; cursor: hand;
   text-align: center;
+  padding-top: 27%;
 }
 
-#worktitle{
-  text-align: center;
-  padding: 4%;
+.jittery span {
+  display: hidden;
+	animation: jitter 200ms linear infinite;
+	color: rgb(63, 25, 187);
+  font: 400 120px/1em Futura;
+  -webkit-text-stroke: 1px black;
 }
 
-.contact{
-  text-align: center;
-  color: rgb(39, 40, 39);
+@keyframes jitter {
+		90% {
+				transform: skewY(2deg) skewX(-1.5deg) scale(1.006);
+		}
 }
 
-a:hover{
-  color: hotpink;
+h2{
+margin-left: 30%;
+
+}
+
+a{
+  text-decoration: none;
+  color: rgb(63, 25, 187);
+}
+
+#main{
+  position: absolute;
+  padding-top: 14%;
+  padding-right: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }

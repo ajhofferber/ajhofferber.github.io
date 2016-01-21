@@ -1,6 +1,5 @@
 body{
   background-color: rgb(247, 247, 247);
-  font-family: futura;
   font-size: 16px;
 }
 
@@ -45,5 +44,4 @@ a{
   position: absolute;
   padding-top: 14%;
   padding-right: 5px;
-  font-family: 'Open Sans Condensed', sans-serif;
 }

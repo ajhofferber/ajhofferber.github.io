@@ -3,10 +3,15 @@ body{
   font-size: 18px;
 }
 
-svg{
-  width: 80%;
-  margin: 0% 17%;
-  margin-top: 30%;
+
+.container {
+    height: 0;
+    width: 80%;    /* specify any width you want (a percentage value, basically) */
+    margin: 0% 10%;
+    /* apply a padding using the following formula */
+    /* this formula makes sure the aspect ratio of the container equals that of the svg graphic */
+    padding-top: 33%;
+    position: relative;    /* create positioning context for svg */
 }
 
 #overlay{

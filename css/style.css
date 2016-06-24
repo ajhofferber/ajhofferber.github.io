@@ -1,8 +1,12 @@
 body{
   background-color: rgb(247, 247, 247);
   font-size: 18px;
+  box-sizing: border-box;
+  transition: all 1.5s ease;
 }
 
+
+/*Styles for the landing page*/
 
 .container {
     height: 0;
@@ -10,7 +14,7 @@ body{
     margin: 0% 10%;
     /* apply a padding using the following formula */
     /* this formula makes sure the aspect ratio of the container equals that of the svg graphic */
-    padding-top: 33%;
+    padding-top: 34%;
     position: relative;    /* create positioning context for svg */
 }
 
@@ -35,19 +39,8 @@ body{
 	max-height: 0;
 }
 
-.letters{
-  margin-top: 30%;
-  /*animation: jitter 200ms linear infinite;*/
-}
 
-.jittery span {
-  /*display: hidden;*/
-	animation: jitter 200ms linear infinite;
-	color: rgb(63, 25, 187);
-  font: 400 120px/1em Futura;
-  -webkit-text-stroke: 1px black;
-}
-path{
+.letters{
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   -webkit-animation: dash 5s linear forwards;
@@ -65,15 +58,7 @@ path{
     }
 }
 
-
-/*@keyframes jitter {
-		90% {
-				transform: skewY(2deg) skewX(-1.5deg) scale(1.006);
-		}
-}*/
-
-
-
+/* Styles for the main content page*/
 
 a{
   text-decoration: none;
@@ -81,9 +66,37 @@ a{
 }
 
 #main{
-  display: none;
+  display: block;
   margin-right: 5%;
   margin-left: 35%;
   position: absolute;
   padding-top: 14%;
+}
+
+#main-mobile{
+  display: none;
+}
+
+@media(max-width: 375px){
+
+  body{
+    background-color: hotpink;
+  }
+  #overlay{
+    background-repeat: repeat;
+    width: 375px;
+  }
+
+  #main{
+    display: none;
+  }
+
+  #main-mobile{
+    display: block;
+  }
+
+  .container{
+    width: 50%;
+  }
+
 }

@@ -8,9 +8,9 @@
 // })
 
 function fillLetters(){
-  $('path').css("fill", "#333399");
-  $('path').css("stroke", "#000000");
-  $('path').css("stroke-width", "1.5");
+  $('.letters').css("fill", "#333399");
+  $('.letters').css("stroke", "#000000");
+  $('.letters').css("stroke-width", "1.5");
 }
 
 $(document).ready( function(){
@@ -28,5 +28,13 @@ $(document).ready( function(){
     $("#overlay").addClass("open");
   })
 
+  $(window).mouseenter(function(){
+    $('body').css('background-color', 'rgb(247, 247, 247)')
+    $('body').css('color', 'black')
+  })
+  $(window).mouseleave(function(){
+    $('body').css('background-color', 'black')
+    $('body').css('color', 'rgb(247, 247, 247)')
+  })
 
 })

@@ -1,12 +1,127 @@
-body{
-  background-color: rgb(247, 247, 247);
-  font-size: 18px;
-  box-sizing: border-box;
-  transition: all 1.5s ease;
+html,body{
+    font-family: "neuzeit-grotesk", "futura";
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
 }
 
+.slide {
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.wrapper {
+    width:960px;
+    height:200px;
+    margin:0 auto;
+    position:relative;
+}
 
-/*Styles for the landing page*/
+.slideno {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    font-size:100px;
+    font-weight:bold;
+    color:rgba(255,255,255,0.3);
+}
+
+.button{
+  margin-top: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 15px;
+  animation: hideshow 2s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+.arrow:hover{
+  cursor: pointer;
+}
+
+polyline:hover{
+  stroke: black;
+}
+
+h2:hover{
+  cursor: pointer;
+}
+
+h4{
+  color: #333399;
+}
+
+h4:hover{
+  cursor: pointer;
+}
+
+p{
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 1.5px;
+}
+
+@keyframes hideshow {
+  0% { stroke-width: 7; }
+  50% { stroke-width: 11; }
+  100% { stroke-width: 7; }
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 90%;
+  margin-left: 5%;
+  position: absolute;
+  margin-top: 12%;
+}
+
+.project{
+  width: 30%;
+margin: 7px;
+background-size: cover;
+}
+
+img{
+  max-width: 100%;
+}
+
+.arrow{
+  display: none;
+  margin: auto;
+}
+
+#slide1{
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
+}
+
+#slide2{
+
+}
+
+#slide3{
+    background-color: #333399;
+}
+
+#brew{
+  background-image: url("https://media.giphy.com/media/EfATJLdobOyQ0/giphy.gif");
+}
+
+#main-content{
+  text-align: center;
+  color: #333399;
+  position: absolute;
+  margin-top: 13%;
+  width: 80%;
+  margin-left: 10%;
+}
 
 .container {
     height: 0;
@@ -17,28 +132,6 @@ body{
     padding-top: 34%;
     position: relative;    /* create positioning context for svg */
 }
-
-#overlay{
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height:100%;
-  top: 0;
-  left: 0;
-  background-image: url('../images/background.png');
-  cursor: pointer; cursor: hand;
-  text-align: center;
-  overflow-y: hidden;
-  max-height: 800px; /* approximate max height */
-  transition-property: all;
-  transition-duration: 1.25s;
-  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-}
-
-#overlay.closed {
-	max-height: 0;
-}
-
 
 .letters{
   stroke-dasharray: 1000;
@@ -61,42 +154,12 @@ body{
 /* Styles for the main content page*/
 
 a{
-  text-decoration: none;
-  color: rgb(63, 25, 187);
+  color: #333399;
 }
 
-#main{
-  display: block;
-  margin-right: 5%;
-  margin-left: 35%;
-  position: absolute;
-  padding-top: 14%;
-}
 
-#main-mobile{
-  display: none;
-}
+
 
 @media(max-width: 375px){
-
-  body{
-    background-color: hotpink;
-  }
-  #overlay{
-    background-repeat: repeat;
-    width: 375px;
-  }
-
-  #main{
-    display: none;
-  }
-
-  #main-mobile{
-    display: block;
-  }
-
-  .container{
-    width: 50%;
-  }
 
 }

@@ -61,8 +61,8 @@ h4:hover{
 }
 
 p{
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.2em;
+  line-height: 1.5em;
   letter-spacing: 1.5px;
 }
 
@@ -79,13 +79,13 @@ p{
   width: 90%;
   margin-left: 5%;
   position: absolute;
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .project{
   width: 30%;
-margin: 7px;
-background-size: cover;
+  margin: 7px;
+  background-size: cover;
 }
 
 img{
